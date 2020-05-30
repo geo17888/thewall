@@ -1,7 +1,7 @@
 fetch("https://2ubiyjczwh.execute-api.eu-west-2.amazonaws.com/wall").then(response => response.json()).then(response => listOfItems(response))
 function walldisplay(n){
-    let list1=document.getElementById("list");
-    n.foreach(items=>{
+    let list1 = document.getElementById("list");
+    n.forEach( items => {
         let submititem=document.createElement("div");
         newitem.classlist.add("mystyle");
         list1.appendChild(newitem);
