@@ -1,12 +1,15 @@
-fetch("https://2ubiyjczwh.execute-api.eu-west-2.amazonaws.com/wall").then(response => response.json()).then(response => listOfItems(response))
-function walldisplay(n){
+fetch('https://2ubiyjczwh.execute-api.eu-west-2.amazonaws.com/wall').then(response => response.json())
+.then(response => wallDisplay(response))
+function wallDisplay(n)
+{
     let list1 = document.getElementById("list");
     n.forEach(items => {
-        let submititem=document.createElement("div");
-        submititem.innerHTML+= items;
-        submititem.classList.add("myStyle");
-        list1.appendChild(submititem);
-    })
+        let submitItem = document.createElement("div");
+        submitItem.classList.add("myStyle");
+        submitItem.innerHTML += items;
+        list1.appendChild(submitItem);
+    });
+}
 }
 
 function inputFunction(name){
