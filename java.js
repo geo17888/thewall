@@ -3,8 +3,8 @@ function walldisplay(n){
     let list1 = document.getElementById("list");
     n.forEach(items => {
         let submititem=document.createElement("div");
-        submititem.innerText= items;
-        submititem.classList.add("mystyle");
+        submititem.innerHTML+= items;
+        submititem.classList.add("myStyle");
         list1.appendChild(submititem);
     })
 }
