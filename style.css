@@ -1,22 +1,35 @@
 
     
 
-
+form{
+    text-align: center;
+}
 
 h1{
    text-align: center;
 }
 
 h1{
-    color: tomato;
+    color: silver;
     font-family: Impact, sans-serif;
     
 
 }
 
-body{ 
-    background-image: url("images/brickwall.jpg");
+body {
+    background: #654ea3;
+    
+    background: linear-gradient(to left, #57575a, #acacaf);
+    min-height: 500vh;
+}
+
    
 
+
+
+.myStyle{
+    color: black;
+    font-size: 25px;
+    font-family: Impact, sans-serif
 }
 
